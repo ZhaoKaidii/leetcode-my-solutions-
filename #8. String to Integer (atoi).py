@@ -1,7 +1,7 @@
 class Solution(object):
     def myAtoi(self,s):
         ss=len(s)
-        c,si,r，sc="0",1,0,1
+        c,si,r,sc="0",1,0,1
         for i in range(ss):
                          if (s[i]==' '):
                                        if sc>1: 
