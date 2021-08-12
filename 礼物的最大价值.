@@ -1,0 +1,9 @@
+class Solution(object):
+    def maxValue(self, grid):
+        import numpy as np 
+        m,n=np.shape(grid)
+        t=np.zeros((m+1,n+1))
+        for i in range(m):
+            for j in range(n):
+                t[i+1][j+1]=grid[i][j]+max(t[i][j+1],t[i+1][j])
+        return int(t[m][n])
